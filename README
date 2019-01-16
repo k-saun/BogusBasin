@@ -11,4 +11,6 @@
   The purpose of the code in this repository is to;
     - Create a mobile application
     - Have this application scrape the bogus basin website to present statistics about snowfall, runs that are open/closed, etc.
+
+  Checkout the progressLog text file to see the problems I've run into, and how I've solved them!
     

@@ -1,7 +1,8 @@
 const request = require('request');
 const cheerio = require('cheerio');
+const jsdom = require('jsdom');
 
-request('http://bogusbasin.org', (error, response, html) => {
+/*request('http://bogusbasin.org', (error, response, html) => {
 	if(!error && response.statusCode == 200) {
 		const $ = cheerio.load(html);
 
@@ -16,4 +17,9 @@ request('http://bogusbasin.org', (error, response, html) => {
 			//console.log(text);
 		});
 	}
-});
+});*/
+const { JSDOM } = jsdom;
+/*const dom = new JSDOM('https://bogusbasin.org/the-mountain/overview/conditions-webcams/').window;
+//console.log(dom.window.document.querySelector("p").textContent); // "Hello world"*/
+const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
+console.log(dom.window.document.querySelector("p").textContent); // "Hello world"

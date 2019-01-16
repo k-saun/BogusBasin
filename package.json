@@ -1,0 +1,26 @@
+{
+  "name": "scrapingproj",
+  "version": "1.0.0",
+  "description": "Bogus Basin Scrape Proj",
+  "main": "nightmaretest.js",
+  "scripts": {
+    "test": "node nightmaretest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-saun/BogusBasin.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Keegan Saunders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-saun/BogusBasin/issues"
+  },
+  "homepage": "https://github.com/k-saun/BogusBasin#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "nightmare": "^3.0.1"
+  }
+}
